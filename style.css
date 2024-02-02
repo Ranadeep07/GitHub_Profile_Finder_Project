@@ -18,6 +18,7 @@ body{
     border-radius: 20px;
     width: 600px; 
     padding: 2rem;
+    gap: 2rem;
     -webkit-box-shadow: -3px 2px 53px 0px rgb(26, 26, 27);
     -moz-box-shadow: -3px 2px 53px 0px rgb(15, 15, 19);
     box-shadow: -3px 2px 53px 0px rgb(23, 22, 29);

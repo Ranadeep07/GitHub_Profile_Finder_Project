@@ -6,7 +6,10 @@ const cont = document.getElementById("cont");
 async function getData(user) {
   const response = await fetch(URL + user);
   const respData = await response.json();
-  const name = respData.name;
+  if(respData?.message === 'Not Found') {
+    alert('GitHub Profile Not Found!')
+    return;
+  }
   let bio = respData.bio;
   if (bio == null) {
     bio = "No Bio!";
@@ -17,7 +20,7 @@ async function getData(user) {
                         <img src="${respData?.avatar_url}" height="150px" alt="">
                     </div>
                     <div class="profile-details">
-                        <p class="text-white" style="font-size: 1.1rem;">${name}</p>
+                        <p class="text-white" style="font-size: 1.1rem;">${respData?.name}</p>
                         <div>
                             <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
                             <span class="text-white" style="font-size: 1.1rem;">${respData?.location}</span>
