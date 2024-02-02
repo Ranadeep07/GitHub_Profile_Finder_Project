@@ -6,7 +6,7 @@ body{
     align-items: center;
     justify-content: center;
     /* border: 1px solid white; */
-    min-height: 100vh;
+    height: 100vh;
 }
 .card{
     background-color: rebeccapurple;
@@ -16,9 +16,8 @@ body{
     align-items: center;
     /* border: 1px solid white; */
     border-radius: 20px;
-    height: 200px;
-    width: 500px; 
-    padding: 25px;
+    width: 600px; 
+    padding: 2rem;
     -webkit-box-shadow: -3px 2px 53px 0px rgb(26, 26, 27);
     -moz-box-shadow: -3px 2px 53px 0px rgb(15, 15, 19);
     box-shadow: -3px 2px 53px 0px rgb(23, 22, 29);
@@ -41,5 +40,5 @@ body{
     display: flex;
 }
 .follower{
-    margin: 0 20px;
+    margin-right: 1rem;
 }
